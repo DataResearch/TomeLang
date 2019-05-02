@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="446d45e0-f4a5-4a6e-be49-4a540482e522" name="Default Changelist" comment="" />
+    <list default="true" id="446d45e0-f4a5-4a6e-be49-4a540482e522" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/ast.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/ast.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/block_statement.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/block_statement.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/boolean_literal.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/boolean_literal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/call_expression.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/call_expression.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/function_literal.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/function_literal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/if_expression.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/if_expression.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/infix_expression.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/infix_expression.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/integer_literal.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/integer_literal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/prefix_expression.go" beforeDir="false" afterPath="$PROJECT_DIR$/ast/prefix_expression.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluator/evaluator.go" beforeDir="false" afterPath="$PROJECT_DIR$/evaluator/evaluator.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/boolean.go" beforeDir="false" afterPath="$PROJECT_DIR$/object/boolean.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/error.go" beforeDir="false" afterPath="$PROJECT_DIR$/object/error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/function.go" beforeDir="false" afterPath="$PROJECT_DIR$/object/function.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/integer.go" beforeDir="false" afterPath="$PROJECT_DIR$/object/integer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/null.go" beforeDir="false" afterPath="$PROJECT_DIR$/object/null.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/object.go" beforeDir="false" afterPath="$PROJECT_DIR$/object/object.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/object/return_value.go" beforeDir="false" afterPath="$PROJECT_DIR$/object/return_value.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser/pratt_parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/parser/pratt_parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repl/repl.go" beforeDir="false" afterPath="$PROJECT_DIR$/repl/repl.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/token/token.go" beforeDir="false" afterPath="$PROJECT_DIR$/token/token.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,38 +35,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/evaluator/evaluator.go">
+        <entry file="file://$PROJECT_DIR$/token/token.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="294" lean-forward="true" selection-start-line="294" selection-end-line="294" />
-              <folding>
-                <element signature="n#!!block;n#evalProgram#0" />
-                <element signature="n#!!block;n#evalBlockstatement#0" />
-                <element signature="n#!!block;n#nativeBoolToBooleanObject#0" />
-                <element signature="n#!!block;n#evalPrefixExpression#0" />
-                <element signature="n#!!block;n#evalBangOperatorExpression#0" />
-                <element signature="n#!!block;n#evalMinusPrefixOperatorExpression#0" />
-                <element signature="n#!!block;n#evalInfixExpression#0" />
-                <element signature="n#!!block;n#evalIntegerInfixExpression#0" />
-                <element signature="n#!!block;n#evalIfExpression#0" />
-                <element signature="n#!!block;n#isTruthy#0" />
-                <element signature="n#!!block;n#newError#0" />
-                <element signature="n#!!block;n#isError#0" />
-                <element signature="n#!!block;n#evalIdentifier#0" />
-                <element signature="n#!!block;n#evalExpressions#0" />
-                <element signature="n#!!block;n#applyFunction#0" />
-                <element signature="n#!!block;n#extendedFunctionEnv#0" />
-                <element signature="n#!!block;n#unwrapReturnValue#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/object/environment.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="761">
+              <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
             </state>
           </provider>
         </entry>
@@ -66,6 +62,9 @@
     </replaceStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
@@ -73,7 +72,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/lexer/lexer_tests.go" />
-        <option value="$PROJECT_DIR$/token/token.go" />
         <option value="$PROJECT_DIR$/lexer/lexer.go" />
         <option value="$PROJECT_DIR$/lexer/lexer_test.go" />
         <option value="$PROJECT_DIR$/codegen/x86.go" />
@@ -107,10 +105,12 @@
         <option value="$PROJECT_DIR$/object/function.go" />
         <option value="$PROJECT_DIR$/object/environment.go" />
         <option value="$PROJECT_DIR$/evaluator/evaluator.go" />
+        <option value="$PROJECT_DIR$/token/token.go" />
+        <option value="$PROJECT_DIR$/codegen/llvm_ir.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -125,42 +125,17 @@
         <subPane>
           <expand>
             <path>
-              <item name="programminglanguage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programminglanguage" type="462c0819:PsiDirectoryNode" />
+              <item name="TomeLang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TomeLang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="programminglanguage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programminglanguage" type="462c0819:PsiDirectoryNode" />
-              <item name="ast" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programminglanguage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programminglanguage" type="462c0819:PsiDirectoryNode" />
+              <item name="TomeLang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TomeLang" type="462c0819:PsiDirectoryNode" />
               <item name="codegen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="programminglanguage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programminglanguage" type="462c0819:PsiDirectoryNode" />
-              <item name="lexer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programminglanguage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programminglanguage" type="462c0819:PsiDirectoryNode" />
-              <item name="object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programminglanguage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programminglanguage" type="462c0819:PsiDirectoryNode" />
-              <item name="parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programminglanguage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programminglanguage" type="462c0819:PsiDirectoryNode" />
-              <item name="repl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="programminglanguage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="programminglanguage" type="462c0819:PsiDirectoryNode" />
+              <item name="TomeLang" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TomeLang" type="462c0819:PsiDirectoryNode" />
               <item name="token" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -172,6 +147,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -264,15 +240,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14498934" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28884026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33152762" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33150986" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39496717" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,13 +349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/token/token.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -584,19 +553,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/object/environment.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/evaluator/evaluator.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="294" lean-forward="true" selection-start-line="294" selection-end-line="294" />
+        <state relative-caret-position="101">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
           <folding>
-            <element signature="n#!!block;n#evalProgram#0" />
             <element signature="n#!!block;n#evalBlockstatement#0" />
             <element signature="n#!!block;n#nativeBoolToBooleanObject#0" />
             <element signature="n#!!block;n#evalPrefixExpression#0" />
@@ -614,6 +575,27 @@
             <element signature="n#!!block;n#extendedFunctionEnv#0" />
             <element signature="n#!!block;n#unwrapReturnValue#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object/environment.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codegen/llvm_ir.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/token/token.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="761">
+          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
         </state>
       </provider>
     </entry>

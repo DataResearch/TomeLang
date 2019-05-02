@@ -6,12 +6,12 @@ import (
 )
 
 type PrefixExpression struct {
-	Token token.Token
+	Token    token.Token
 	Operator string
-	Right Expression
+	Right    Expression
 }
 
-func (pe *PrefixExpression) expressionNode() {}
+func (pe *PrefixExpression) expressionNode()      {}
 func (pe *PrefixExpression) TokenLiteral() string { return pe.Token.Literal }
 
 func (pe *PrefixExpression) String() string {

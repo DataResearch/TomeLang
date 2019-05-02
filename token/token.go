@@ -42,42 +42,77 @@ const (
 	RBRACE = "}"
 
 	// Keywords
-	RETURN   = "return"
-	LET      = "let"
+	LET   = "let"
+	CONST = "const"
+	TYPE  = "type"
+
+	STRUCT   = "struct"
 	FUNCTION = "fn"
-	IF       = "if"
-	ELSE     = "else"
-	BREAK    = "break"
+	RETURN   = "return"
+
 	FOR      = "for"
 	WHILE    = "while"
 	SWITCH   = "switch"
 	CASE     = "case"
-	STRUCT   = "struct"
-	TRUE     = "true"
-	FALSE    = "false"
+	BREAK    = "break"
+	CONTINUE = "continue"
 
-	// Identifiers and Literals
-	IDENT  = "ident" // identifier
+	IF   = "if"
+	ELSE = "else"
+
+	TRUE  = "true"
+	FALSE = "false"
+
+	// Basic Types (keywords)
 	INT    = "int"
+	UINT   = "uint"
+	INT8   = "int8"
+	UINT8  = "uint8"
+	INT16  = "int16"
+	UINT16 = "uint16"
+	INT32  = "int32"
+	UINT32 = "uint32"
+	INT64  = "int64"
+	UINT64 = "uint64"
 	FLOAT  = "float"
-	STRING = "string"
+	DOUBLE = "double"
 	BOOL   = "bool"
+
+	// Identifiers
+	IDENT = "ident" // identifier
+
 )
 
 var keywords = map[string]TokenType{
-	"return": RETURN,
-	"let":    LET,
-	"fn":     FUNCTION,
-	"if":     IF,
-	"else":   ELSE,
-	"break":  BREAK,
-	"for":    FOR,
-	"while":  WHILE,
-	"switch": SWITCH,
-	"case":   CASE,
-	"struct": STRUCT,
-	"true":   TRUE,
-	"false":  FALSE,
+	"let":      LET,
+	"const":    CONST,
+	"type":     TYPE,
+	"struct":   STRUCT,
+	"fn":       FUNCTION,
+	"return":   RETURN,
+	"for":      FOR,
+	"while":    WHILE,
+	"switch":   SWITCH,
+	"case":     CASE,
+	"break":    BREAK,
+	"continue": CONTINUE,
+	"if":       IF,
+	"else":     ELSE,
+	"true":     TRUE,
+	"false":    FALSE,
+	"int":      INT,
+	"uint":     UINT,
+	"int8":     INT8,
+	"uint8":    UINT8,
+	"int16":    INT16,
+	"uint16":   UINT16,
+	"int32":    INT32,
+	"uint32":   UINT32,
+	"int64":    INT64,
+	"uint64":   UINT64,
+	"float":    FLOAT,
+	"double":   DOUBLE,
+	"bool":     BOOL,
 }
 
 func LookupIdent(ident string) TokenType {

@@ -7,8 +7,8 @@ import (
 )
 
 var (
-	NULL = &object.Null{}
-	TRUE = &object.Boolean{Value: true}
+	NULL  = &object.Null{}
+	TRUE  = &object.Boolean{Value: true}
 	FALSE = &object.Boolean{Value: false}
 )
 
@@ -61,7 +61,6 @@ func Eval(node ast.Node, env *object.Environment) object.Object {
 
 		return applyFunction(function, args)
 		// TODO
-
 
 	case *ast.PrefixExpression:
 		right := Eval(node.Right, env)
@@ -116,7 +115,7 @@ func evalBlockstatement(block *ast.BlockStatement, env *object.Environment) obje
 		if result != nil {
 			rt := result.Type()
 
-			if rt == object.RETURN_VALUE_OBJ ||rt == object.ERROR_OBJ {
+			if rt == object.RETURN_VALUE_OBJ || rt == object.ERROR_OBJ {
 				return result
 			}
 		}

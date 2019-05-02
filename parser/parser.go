@@ -278,7 +278,7 @@ func (p *Parser) parseBoolean() ast.Expression {
 
 func (p *Parser) parsePrefixExpression() ast.Expression {
 	expression := &ast.PrefixExpression{
-		Token: p.curToken,
+		Token:    p.curToken,
 		Operator: p.curToken.Literal,
 	}
 
@@ -289,9 +289,9 @@ func (p *Parser) parsePrefixExpression() ast.Expression {
 
 func (p *Parser) parseInfixExpression(left ast.Expression) ast.Expression {
 	expression := &ast.InfixExpression{
-		Token: p.curToken,
+		Token:    p.curToken,
 		Operator: p.curToken.Literal,
-		Left: left,
+		Left:     left,
 	}
 
 	precendence := p.curPrecendence()

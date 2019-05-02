@@ -6,13 +6,13 @@ import (
 )
 
 type IfExpression struct {
-	Token token.Token // the "if" token
-	Condition Expression
+	Token       token.Token // the "if" token
+	Condition   Expression
 	Consequence *BlockStatement
 	Alternative *BlockStatement
 }
 
-func (ie *IfExpression) expressionNode() {}
+func (ie *IfExpression) expressionNode()      {}
 func (ie *IfExpression) TokenLiteral() string { return ie.Token.Literal }
 
 func (ie *IfExpression) String() string {
