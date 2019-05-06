@@ -1,15 +1,31 @@
 package token
 
-type TokenType string
+import "bytes"
+
+type TokenType = string
 
 type Token struct {
 	Type    TokenType
 	Literal string
 }
 
+func (tok *Token) String() string {
+	var out bytes.Buffer
+
+	out.WriteString("{")
+	out.WriteString("Type: ")
+	out.WriteString(tok.Type)
+	out.WriteString(", ")
+	out.WriteString("Literal: ")
+	out.WriteString(tok.Literal)
+	out.WriteString("}")
+
+	return out.String()
+}
+
 const (
 	// Support
-	ILLEGAL = "illegal"
+	ILLEGAL TokenType = "illegal"
 	EOF     = "eof"
 
 	// Operators
@@ -33,9 +49,13 @@ const (
 	LESSEREQUAL  = "<="
 
 	// Delimeters
+	DOT       = "."
 	COMMA     = ","
 	SEMICOLON = ";"
+	QUOTATION = "\""
 
+	LBRACK = "["
+	RBRACK = "]"
 	LPAREN = "("
 	RPAREN = ")"
 	LBRACE = "{"
