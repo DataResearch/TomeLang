@@ -42,10 +42,10 @@ func main() {
 	files := []string{}
 
 	for _, param := range commandlineargs {
-		if param == "-token" {
+		if param == "--token" {
 			mode = build.TOKENS
 		}
-		if param == "-ast" {
+		if param == "--ast" {
 			mode = build.AST
 		}
 		if strings.HasSuffix(param, ".tm") {

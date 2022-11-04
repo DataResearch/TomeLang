@@ -27,6 +27,8 @@ var precendences = map[token.TokenType]int{
 	token.NOTEQUAL:       EQUALS,
 	token.LESSER:         LESSGREATER,
 	token.GREATER:        LESSGREATER,
+	token.LESSEREQUAL:    LESSGREATER,
+	token.GREATEREQUAL:   LESSGREATER,
 	token.PLUS:           SUM,
 	token.MINUS:          SUM,
 	token.DIVISION:       PRODUCT,
